@@ -4,7 +4,7 @@ use personal_expenses_tracking;
 
 # Usuario 1:
 INSERT INTO user (first_name, last_name, email, password) VALUES 
-	('Franco', 'Ponzio', 'franco@gmail.com', '123');
+	('Franco', 'Ponzio', 'franco@example.com', '123');
 INSERT INTO transaction_category (id_user, description, color) VALUES
 	(1, 'Comida', 'red'),
 	(1, 'Ropa', 'blue'),
@@ -20,7 +20,7 @@ INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, am
 
 # Usuario 2:
 INSERT INTO user (first_name, last_name, email, password) VALUES 
-	('Daniel', 'Gonzalez', 'daniel@gmail.com', 'abc');
+	('Daniel', 'Gonzalez', 'daniel@example.com', 'abc');
 INSERT INTO transaction_category (id_user, description, color) VALUES
 	(2, 'Gastos varios', 'red'),
 	(2, 'Comida', 'blue'),
@@ -34,7 +34,7 @@ INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, am
 
 # Usuario 3:
 INSERT INTO user (first_name, last_name, email, password) VALUES 
-	('Lucas', 'Gomez', 'lucas@gmail.com', 'xyz');
+	('Lucas', 'Gomez', 'lucas@example.com', 'xyz');
 INSERT INTO transaction_category (id_user, description, color) VALUES
 	(3, 'Cursos', 'yellow'),
     (3, 'Articulos para la casa', 'blue'),
@@ -50,7 +50,7 @@ INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, am
 
 # Usuario 4:
 INSERT INTO user (first_name, last_name, email, password) VALUES 
-	('Pepe', 'Diaz', 'pepe@gmail.com', 'xyz');
+	('Pepe', 'Diaz', 'pepe@example.com', 'xyz');
 INSERT INTO transaction_category (id_user, description, color) VALUES
 	(4, 'Ropa', 'yellow'),
     (4, 'Tecnologia', 'blue'),
@@ -66,7 +66,7 @@ INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, am
     
 # Usuario 5:
 INSERT INTO user (first_name, last_name, email, password) VALUES 
-	('Carlos', 'Martinez', 'carlitos@gmail.com', 'xyz');
+	('Carlos', 'Martinez', 'carlitos@example.com', 'xyz');
 INSERT INTO transaction_category (id_user, description, color) VALUES
     (5, 'Comida', 'gray'),
     (5, 'Servicios', 'green'),
@@ -78,3 +78,93 @@ INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, am
 	(4, 20, 8, 10.50, '2023-07-25 14:34:50', 'Servicio de agua'),
 	(4, 21, 9, 325.75, '2023-07-23 16:20:01', 'Celular');
     
+
+# Usuario 6:
+INSERT INTO user (first_name, last_name, email, password) VALUES 
+    ('Ana', 'García', 'ana@example.com', 'password');
+
+INSERT INTO transaction_category (id_user, description, color) VALUES
+    (6, 'Compras', 'blue'),
+    (6, 'Entretenimiento', 'green'),
+    (6, 'Transporte', 'yellow');
+
+INSERT INTO payment_method (id_user, description) VALUES
+    (6, 'Efectivo/Débito'), 
+    (6, 'Crédito');
+
+INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, amount, datetime, description) VALUES
+    (6, 22, 10, 30.50, '2023-07-15 09:30:00', 'Compra en tienda'),
+    (6, 23, 11, 15.75, '2023-07-15 14:00:00', 'Boletos de cine'),
+    (6, 24, 10, 5.25, '2023-07-15 18:15:00', 'Viaje en autobús');
+
+# Usuario 7:
+INSERT INTO user (first_name, last_name, email, password) VALUES 
+    ('Luis', 'Martínez', 'luis@example.com', 'password');
+
+INSERT INTO transaction_category (id_user, description, color) VALUES
+    (7, 'Comida', 'red'),
+    (7, 'Ropa', 'blue'),
+    (7, 'Entretenimiento', 'green');
+
+INSERT INTO payment_method (id_user, description) VALUES
+    (7, 'Efectivo/Débito'), 
+    (7, 'Crédito');
+
+INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, amount, datetime, description) VALUES
+    (7, 25, 12, 12.00, '2023-07-15 10:45:00', 'Almuerzo'),
+    (7, 26, 13, 50.50, '2023-07-15 15:30:00', 'Compra de ropa'),
+    (7, 27, 12, 8.75, '2023-07-15 19:45:00', 'Boletos de concierto');
+
+# Usuario 8:
+INSERT INTO user (first_name, last_name, email, password) VALUES 
+    ('María', 'López', 'maria@example.com', 'password');
+
+INSERT INTO transaction_category (id_user, description, color) VALUES
+    (8, 'Comida', 'red'),
+    (8, 'Transporte', 'yellow'),
+    (8, 'Salud', 'green');
+
+INSERT INTO payment_method (id_user, description) VALUES
+    (8, 'Efectivo/Débito'), 
+    (8, 'Crédito');
+
+INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, amount, datetime, description) VALUES
+    (8, 28, 14, 8.00, '2023-07-15 11:20:00', 'Desayuno'),
+    (8, 29, 15, 25.25, '2023-07-15 16:15:00', 'Viaje en taxi'),
+    (8, 30, 14, 15.50, '2023-07-15 20:30:00', 'Compra de medicamentos');
+
+# Usuario 9:
+INSERT INTO user (first_name, last_name, email, password) VALUES 
+    ('Javier', 'Rodríguez', 'javier@example.com', 'password');
+
+INSERT INTO transaction_category (id_user, description, color) VALUES
+    (9, 'Compras', 'blue'),
+    (9, 'Hogar', 'green'),
+    (9, 'Transporte', 'yellow');
+
+INSERT INTO payment_method (id_user, description) VALUES
+    (9, 'Efectivo/Débito'), 
+    (9, 'Crédito');
+
+INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, amount, datetime, description) VALUES
+    (9, 31, 16, 50.00, '2023-07-15 12:45:00', 'Compra en línea'),
+    (9, 32, 17, 35.75, '2023-07-15 17:30:00', 'Artículos para el hogar'),
+    (9, 33, 16, 10.25, '2023-07-15 21:15:00', 'Viaje en metro');
+
+# Usuario 10:
+INSERT INTO user (first_name, last_name, email, password) VALUES 
+    ('Laura', 'Hernández', 'laura@example.com', 'password');
+
+INSERT INTO transaction_category (id_user, description, color) VALUES
+    (10, 'Comida', 'red'),
+    (10, 'Entretenimiento', 'green'),
+    (10, 'Salud', 'blue');
+
+INSERT INTO payment_method (id_user, description) VALUES
+    (10, 'Efectivo/Débito'), 
+    (10, 'Crédito');
+
+INSERT INTO transaction (id_user, id_transaction_category, id_payment_method, amount, datetime, description) VALUES
+    (10, 34, 18, 15.00, '2023-07-15 14:00:00', 'Almuerzo'),
+    (10, 35, 19, 20.50, '2023-07-15 18:45:00', 'Boletos de cine'),
+    (10, 36, 18, 5.75, '2023-07-15 22:30:00', 'Compra de vitaminas');
